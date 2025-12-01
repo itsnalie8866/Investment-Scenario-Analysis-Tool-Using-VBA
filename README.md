@@ -95,6 +95,3 @@ Results are shown via message box and stored in **Investment_Log** for tracking 
 
 Personal academic project. Not intended for commercial use.
 
----
-
-If you'd like, I can also generate a **folder structure**, **badges**, or a more stylish README.
