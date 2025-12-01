@@ -91,6 +91,100 @@ Results are shown via message box and stored in **Investment_Log** for tracking 
 
 ---
 
+## 🔧 How to Clone the Repository & Run the Excel Tool
+
+### **1️⃣ Clone the Repository**
+
+You can clone the repo using HTTPS or SSH.
+
+**Using HTTPS:**
+
+```bash
+git clone https://github.com/<your-username>/<your-repo-name>.git
+```
+
+**Using SSH:**
+
+```bash
+git clone git@github.com:<your-username>/<your-repo-name>.git
+```
+
+Then open the folder:
+
+```bash
+cd <your-repo-name>
+```
+
+---
+
+## **2️⃣ Open the Excel File (.xlsm)**
+
+1. Locate the file:
+   **Excel_VBA.xlsm**
+   (This is your macro-enabled workbook containing the full UserForm and VBA logic.)
+
+2. Double-click the file to open it in **Microsoft Excel**.
+
+---
+
+## **3️⃣ Enable Macros (Important)**
+
+Because the tool uses VBA, Excel will block macros by default.
+Enable them using:
+
+**When Excel opens:**
+
+* Click **“Enable Content”** on the yellow security banner
+  *or*
+* Go to **File → Info → Enable Content → Enable All Macros**
+
+---
+
+## **4️⃣ Run the Scenario Calculator**
+
+Once macros are enabled:
+
+### Option A — Use the Dashboard Button
+
+If your workbook includes a dashboard button:
+
+* Click **“Start Scenario Calculator”**
+  This will open the UserForm.
+
+### Option B — Run from Developer Tab
+
+1. Go to **Developer → Macros**
+2. Select **OpenScenarioCalculator**
+3. Click **Run**
+
+This opens the **Return Calculation Form**, where you can enter:
+
+* Class allocation percentages
+* Sub-sector return rates
+* Investment duration (years)
+* Optional Worst/Best Case Auto-Fill
+
+Click **Calculate** to:
+
+* Display detailed returns
+* Automatically log results in the *Investment_Log* sheet
+* Choose whether to run another scenario
+
+---
+
+## **5️⃣ Optional: Use the Public Function in Excel**
+
+You can also calculate return directly in a worksheet using:
+
+```excel
+=CalculateReturn(amount, rate, years)
+```
+
+Example:
+
+```excel
+=CalculateReturn(2000000000, 8, 5)
+```
 ## 📜 Licence
 
 Personal academic project. Not intended for commercial use.
